@@ -70,11 +70,9 @@ ssh-keygen -t rsa -b 4096 -f ~/.ssh/gcp_rsa_4096 -C "your_email@example.com"
 ![ssh](./images/ssh_extensions.png)<br/>
 * **Docker**<br/>
 ![docker](./images/docker_extensions.png)<br/>
-3. `~/.ssh/config` 설정
-![ssh_conifg](./images/ssh_config.png)<br/>
-* 외부 IP 주의
-* IdentityFile 위치 주의
-* User 주의
+
+2. `~/.ssh/config` 설정
+<!--![ssh_conifg](./images/ssh_config.png)<br/>-->
 
 ```ssh
 Host gcp-vm
@@ -82,5 +80,8 @@ Host gcp-vm
   User ubuntu
   IdentityFile ~/.ssh/gcp_rsa_4096
 ```
+* 외부 IP 주의
+* IdentityFile 위치 주의
+* User 주의
 
 3. VS Code 명령 팔레트 (Cmd+Shift+P) → `Remote-SSH: Connect to Host` → `gcp-vm` 선택
