@@ -73,7 +73,6 @@ ssh-keygen -t rsa -b 4096 -f ~/.ssh/gcp_rsa_4096 -C "your_email@example.com"
 
 2. `~/.ssh/config` 설정
 <!--![ssh_conifg](./images/ssh_config.png)<br/>-->
-
 ```ssh
 Host gcp-vm
   HostName <EXTERNAL_IP>
