@@ -44,7 +44,9 @@ GCP VM 인스턴스 생성을 위한 표준 사양을 아래와 같이 확정 �
 | **부팅 디스크 유형** | 미지정 | `SSD 영구 디스크` | OS 및 프로그램의 전반적인 반응 속도 향상 |
 | **부팅 디스크 크기** | `100GB 이상` | `150 GB` | 초기 설정 크기를 명확하게 지정 (필요시 증설 가능) |
 
-*나머지 사양(머신 유형, GPU)은 기존 논의와 동일하게 유지됩니다.*
+#### Deep Learning on Linux 설치시, 
+***Debian11 + CUDA 12.4가 있는 옵션으로 하면 nvidia drvier, CUDA, Doocker, NVIDIA Container Toolkit 알아서 설치됨!!***
+> *나머지 사양(머신 유형, GPU)은 기존 논의와 동일하게 유지.(12v CPU, 48GB RAM, ...)*
 
 3. 생성 후 외부 IP 확인 → SSH 접속 or VS Code 연결 준비 완료
 
